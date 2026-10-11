@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Evaluation outputs — never commit trajectories or patches
+results/
+*.patch
+submission.parquet
+
+# Submission archive artifacts
+submission.zip
+
+# Local data symlinks / downloaded assets
+data/
+wheelhouse/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+.build/
