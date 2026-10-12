@@ -35,4 +35,8 @@ and its Paper Track.
     --sandbox docker \
     --task-id fastapi_15589
   ```
+- Run an eval with provenance tracking (writes `experiments/runs/<run_id>/manifest.yaml` + submission snapshot):
+  ```bash
+  bash scripts/run_eval.sh <run_id> --task-id fastapi_15589
+  ```
 - Build the archive: `bash scripts/package.sh`
