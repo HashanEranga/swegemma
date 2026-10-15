@@ -1,0 +1,30 @@
+run_id: noskills_v3_gemma12b_fastapi_11194
+created_at: 2026-10-15T23:27:29+05:30
+git:
+  commit: a8d59479c119
+  dirty: true
+submission_dir: variants/noskills_v3_fastapi_11194
+submission_sha256: c0937912b39c2a4155bceac9d73c8420ca2474dc04be3d2e74839372c2a86473
+model:
+  declared: gemma-4-31b-it-qat-w4a16-ct
+  local_override: models.local.yaml
+sandbox: docker
+evaluation:
+  timeout_seconds: 300
+  max_tool_calls: 60
+  max_time_minutes: 5
+  max_turns: 100
+tasks:
+  - fastapi_11194
+results_dir: results/noskills_v3_gemma12b_fastapi_11194
+command: swegemma eval --tasks data/gemma-4-developer-agent/tasks.jsonl --snapshots-dir data/gemma-4-developer-agent/snapshots --submission-dir variants/noskills_v3_fastapi_11194 --results-dir /home/hashan/Documents/swegemma/results/noskills_v3_gemma12b_fastapi_11194 --sandbox docker --models-yaml models.local.yaml --task-id fastapi_11194 --timeout-seconds 300 --max-tool-calls 60 --max-time-minutes 5 --max-turns 100 
+status: finished
+outcome:
+  finished_at: 2026-10-15T23:31:50+05:30
+  duration_seconds: 261
+  eval_exit_code: 0
+  status: completed
+  total_tasks: 1
+  resolved: 0
+  resolution_rate: 0.0
+  errors: 0

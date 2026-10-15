@@ -1,0 +1,7 @@
+name: locate_change_site
+description: Locates the exact change site for a described bug in this repository. Call ONCE with the key details from the problem statement (error message, symbols, expected vs actual behavior). Returns file paths, line ranges, and the minimal required change. Read-only — never modifies files.
+model: gemma-4-31b-it-qat-w4a16-ct
+instruction: !include ../prompts/analyzer.md
+tools:
+  - run_command
+generate_content_config: !include ../configs/sampling.yaml

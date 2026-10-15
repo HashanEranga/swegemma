@@ -1,0 +1,8 @@
+# Per-task execution budgets for Stage 1 inference.
+# Dev baseline: larger than the 1-min / 10-call starter so results
+# measure agent behavior rather than premature timeouts.
+evaluation:
+  timeout_seconds: 300
+  max_tool_calls: 60
+  max_time_minutes: 5
+  max_turns: 100
